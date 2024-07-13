@@ -1,7 +1,6 @@
 from typing import Annotated
 
 from fastapi import APIRouter, Path
-from sqlmodel import Session
 
 from app.api.dependencies import SessionDep
 from app.database import Organizer
