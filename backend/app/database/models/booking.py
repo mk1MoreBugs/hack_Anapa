@@ -25,3 +25,9 @@ class BookingInDB(BookingBase, table=True):
 
     platform: Platform = Relationship(back_populates="bookings")
     organizer: Organizer = Relationship(back_populates="bookings")
+
+
+class BookingWithPlatformAndOrganizer(SQLModel):
+    platform: Platform
+    booking: BookingInDB
+    organizer: Organizer
