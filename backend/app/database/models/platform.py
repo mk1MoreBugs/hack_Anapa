@@ -19,4 +19,4 @@ class Platform(SQLModel, table=True):
     capacity: int
     price: int
 
-    bookings: list["Booking"] = Relationship(back_populates="platform")
+    bookings: list["BookingInDB"] = Relationship(back_populates="platform")
