@@ -14,7 +14,7 @@ router = APIRouter(
 
 
 @router.get("/")
-def get_platforms(
+async def get_platforms(
         session: SessionDep,
         address: Annotated[str | None, Query()] = None,
 ) -> list[Platform]:
@@ -29,7 +29,7 @@ def get_platforms(
 
 
 @router.get("/price")
-def get_platforms(
+async def get_platforms(
         session: SessionDep,
         price_up: Annotated[int, Query()],
         price_down: Annotated[int, Query()],
@@ -43,5 +43,5 @@ def get_platforms(
 
 
 @router.post("/")
-def create_new_platform(session: SessionDep, platform: Platform):
+async def create_new_platform(session: SessionDep, platform: Platform):
     create_platform(session=session, platform=platform)
