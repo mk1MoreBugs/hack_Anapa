@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from app.api.routes import platform, organizer, booking
+from app.api.routers import platform, organizer, booking
 
 api_router = APIRouter()
 

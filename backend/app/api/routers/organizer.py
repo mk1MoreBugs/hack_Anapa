@@ -8,7 +8,7 @@ from app.database.crud.organizer import create_user_organizer, read_user_organiz
 
 router = APIRouter(
     prefix="/organizer",
-    tags=["organizer (users) routes"],
+    tags=["organizer (users) routers"],
 )
 
 

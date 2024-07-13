@@ -9,7 +9,7 @@ from app.database.models.booking import BookingIn
 
 router = APIRouter(
     prefix="/booking",
-    tags=["booking routes"],
+    tags=["booking routers"],
 )
 
 

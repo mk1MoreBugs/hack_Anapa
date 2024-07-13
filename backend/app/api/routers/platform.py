@@ -9,7 +9,7 @@ from app.database.models.platform import Platform
 
 router = APIRouter(
     prefix="/platforms",
-    tags=["platform routes"],
+    tags=["platform routers"],
 )
 
 
