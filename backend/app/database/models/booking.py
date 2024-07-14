@@ -12,6 +12,7 @@ class BookingBase(SQLModel):
     platform_id: int = Field(foreign_key="platform.id")
     organizer_id: int = Field(foreign_key="organizer.id")
     application_approved: bool
+    event_name: str
 
 
 class BookingIn(BookingBase):
