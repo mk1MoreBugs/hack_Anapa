@@ -5,9 +5,9 @@ from sqlmodel import Field, SQLModel, Relationship
 
 
 class PlatformCategoryEnum(enum.Enum):
-    conference_hall = "conference hall"
+    conference_hall = "conference_hall"
     restaurant = "restaurant"
-    open_areas = "open areas"
+    open_areas = "open_areas"
 
 
 class Platform(SQLModel, table=True):
